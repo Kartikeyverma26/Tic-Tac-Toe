@@ -1,0 +1,94 @@
+body {
+  margin : 0;
+  padding : 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg,#141E30, #243B55);
+}
+
+h1 {
+  margin-top: 15px;
+  color: #fff;
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+#status {
+  margin: 10px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 120px;
+  height: 120px;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1.2px solid white;
+  user-select: none;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: none;
+  color : #fff;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(4),
+.cell:nth-child(7) {
+  border-left: none;
+  color : #fff;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9) {
+  border-right: none;
+  color : #fff;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: none;
+  color : #fff;
+}
+.cell:nth-child(5) {
+  color : #fff;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #00bcd4, #009688);
+  border: cyan;
+  border-radius: 15px;
+}
+button:hover {
+  background: #00bcd4;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px cyan;
+  transition: all 0.4s ease;
+}
