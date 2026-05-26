@@ -18,20 +18,11 @@ A simple Tic Tac Toe game built using HTML, CSS & JavaScript
 - CSS
 - JavaScript (Vanilla)
 
-## 📁 PROJECT STRUCTURE
-
-tic-tac-toe/
-│
-├── index.html      -> UI structure
-├── style.css       -> Styling
-├── script.js       -> Game logic
-└── README.md       -> Documentation
-
 ## 🎮 HOW TO PLAY
 
 1. Open index.html in browser
-2. You play as ❌ (X)
-3. Computer plays as ⭕ (O)
+2. You play as ❌
+3. Computer plays as ⭕
 4. Click empty box to make move
 5. First to make 3 in a row wins 🏆
 6. Score updates automatically
